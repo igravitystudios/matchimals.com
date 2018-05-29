@@ -1,0 +1,39 @@
+body {
+  font-family: "Patua One", sans-serif;
+  background-color: #d9e7ff;
+  padding: 8px;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-icon {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10%;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.coming-soon {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.download-icon {
+  margin: 16px 8px;
+  opacity: 0.1;
+  cursor: not-allowed;
+}
