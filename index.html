@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./icons/favicon.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./icons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon-180x180.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Matchimals" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1e1412" />
+    <meta name="theme-color" content="#1e1412" />
+    <link rel="manifest" href="manifest.json" />
+    <meta property="og:url" content="https://www.matchimals.app" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Matchimals- an animal matching puzzle card game"
+    />
+    <meta
+      property="og:description"
+      content="Matchimals is a simple card game in which two players take turns trying to match animals in a puzzle-like fashion. The player with the most points at the end wins!"
+    />
+    <!-- <meta property="og:image" content="matchimals-og-1200x630.png" /> -->
+    <!-- <meta property="og:image:width" content="1200" /> -->
+    <!-- <meta property="og:image:height" content="630" /> -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Matchimals- an animal matching puzzle card game"
+    />
+    <meta
+      name="twitter:description"
+      content="Matchimals is a simple card game in which two players take turns trying to match animals in a puzzle-like fashion. The player with the most points at the end wins!"
+    />
+    <!-- <meta name="twitter:image" content="matchimals-og-600x600.png" /> -->
+    <title>Matchimals | An animal matching puzzle game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Patua+One"
+      rel="stylesheet"
+    />
+    <style>
+      a,
+      abbr,
+      acronym,
+      address,
+      applet,
+      article,
+      aside,
+      audio,
+      b,
+      big,
+      blockquote,
+      body,
+      canvas,
+      caption,
+      center,
+      cite,
+      code,
+      dd,
+      del,
+      details,
+      dfn,
+      div,
+      dl,
+      dt,
+      em,
+      embed,
+      fieldset,
+      figcaption,
+      figure,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      hgroup,
+      html,
+      i,
+      iframe,
+      img,
+      ins,
+      kbd,
+      label,
+      legend,
+      li,
+      mark,
+      menu,
+      nav,
+      object,
+      ol,
+      output,
+      p,
+      pre,
+      q,
+      ruby,
+      s,
+      samp,
+      section,
+      small,
+      span,
+      strike,
+      strong,
+      sub,
+      summary,
+      sup,
+      table,
+      tbody,
+      td,
+      tfoot,
+      th,
+      thead,
+      time,
+      tr,
+      tt,
+      u,
+      ul,
+      var,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:after,
+      blockquote:before,
+      q:after,
+      q:before {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      body {
+        font-family: Patua One, sans-serif;
+        background-color: #d9e7ff;
+        background-image: url("./images/trianglify.svg");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 8px;
+      }
+      .container {
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .app-icon {
+        width: 100%;
+        max-width: 240px;
+        border-radius: 10%;
+        box-shadow: 0 0 6px hsla(0, 0%, 100%, 0.8);
+        margin-top: 32px;
+      }
+      h1 {
+        color: #222;
+        font-size: 48px;
+        margin-top: 12px;
+        margin-bottom: 4px;
+      }
+      h2 {
+        color: #222;
+        font-size: 36px;
+        margin-top: 12px;
+        margin-bottom: 4px;
+      }
+      .coming-soon,
+      h1,
+      h2 {
+        line-height: 1;
+        text-shadow: 0 0 6px hsla(0, 0%, 100%, 0.8);
+      }
+      .coming-soon {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
+      .download-icon {
+        margin: 16px 8px;
+        opacity: 0.25;
+        cursor: not-allowed;
+      }
+      .play-now {
+        display: block;
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        line-height: 1;
+        text-shadow: 0 0 6px hsla(0, 0%, 100%, 0.8);
+        margin-top: 24px;
+      }
+      .screenshot {
+        display: flex;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.png" class="app-icon" />
+      <h1>Matchimals.fun</h1>
+      <div class="coming-soon">An animal matching puzzle card game</div>
+      <div>
+        <img src="./images/badge-app-store.svg" class="download-icon" /><img
+          src="./images/badge-google-play.svg"
+          class="download-icon"
+        />
+      </div>
+      <h2>Screenshots</h2>
+      <div>
+        <img
+          src="./screenshots/Simulator Screen Shot - iPad Pro (12.9-inch) (3rd generation) - 1.png"
+          class="screenshot"
+        />
+        <img
+          src="./screenshots/Simulator Screen Shot - iPad Pro (12.9-inch) (3rd generation) - 3.png"
+          class="screenshot"
+        />
+        <img
+          src="./screenshots/Simulator Screen Shot - iPad Pro (12.9-inch) (3rd generation) - 6.png"
+          class="screenshot"
+        />
+      </div>
+      <div class="footer">
+        <span>© 2019 iGravity Studios, LLC</span> |
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </body>
+</html>
