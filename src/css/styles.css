@@ -131,7 +131,7 @@ table {
 body {
   font-family: Patua One, sans-serif;
   background-color: #d9e7ff;
-  background-image: url("../img/trianglify.svg");
+  background-image: url("/img/trianglify.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
